@@ -1,0 +1,2 @@
+pyinstaller command : pyinstaller --noconfirm --onedir --onefile --console --icon "C:/Users/loren/OneDrive/Desktop/python projects/DiscordNuker/icon.ico"  "C:/Users/loren/OneDrive/Desktop/python projects/DiscordNuker/main.py"
+pablo'sTests Token : OTczOTMwOTI4NjA0ODY0NTEy.Go8KyJ.pgkhLvoXnq36ty3W0bFgsCIGUSsdnj0-ugyIZs
