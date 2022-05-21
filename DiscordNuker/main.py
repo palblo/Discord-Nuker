@@ -9,6 +9,7 @@ print(Colorate.Horizontal(Colors.purple_to_red, '''
 ││││ │├┴┐├┤   ├┴┐│ │ │ 
 ┘└┘└─┘┴ ┴└─┘  └─┘└─┘ ┴ By Pąblo#4316
 
+Pąblo#4316 | https://github.com/palblo/DiscordNukeBot/
 '''))
 print(Colorate.Vertical(Colors.red_to_white, 'VERSION: V1.0'))
 bot_token = Write.Input(f"\nbot token -> ", Colors.blue_to_purple, interval=0.00005)
@@ -20,6 +21,8 @@ def main():
 ┌┐┌┬ ┬┬┌─┌─┐  ┌┐ ┌─┐┌┬┐
 ││││ │├┴┐├┤   ├┴┐│ │ │ 
 ┘└┘└─┘┴ ┴└─┘  └─┘└─┘ ┴ By Pąblo#4316
+
+Pąblo#4316 | https://github.com/palblo/DiscordNukeBot/
     '''))
 
     os.system("title DISCORD NUKER BOT  :  V1  :  HOME")
