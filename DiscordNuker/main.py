@@ -14,6 +14,7 @@ try:
 ┘└┘└─┘┴ ┴└─┘  └─┘└─┘ ┴ By Pąblo#4316
 
 Pąblo#4316 | https://github.com/palblo/DiscordNukeBot/
+
 '''))
 except:
     bot_token = Write.Input(f"\nBOT TOKEN -> ", Colors.blue_to_purple, interval=0.00005)
