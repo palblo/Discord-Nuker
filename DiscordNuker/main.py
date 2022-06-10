@@ -19,13 +19,12 @@ def main():
         guild_id = configdata['guild_id']
         os.system("title DISCORD NUKER BOT  :  V1.1  :  SETUP")
     except:
-        print(Colorate.Horizontal(Colors.purple_to_red, '''
-    ┌┐┌┬ ┬┬┌─┌─┐  ┌┐ ┌─┐┌┬┐
-    ││││ │├┴┐├┤   ├┴┐│ │ │ 
-    ┘└┘└─┘┴ ┴└─┘  └─┘└─┘ ┴ By Pąblo#4316
-
-    Pąblo#4316 | github.com/palblo/DiscordNukeBot
-    '''))
+        print(Colorate.Horizontal(Colors.purple_to_red, '''     __       _            ___       _   
+  /\ \ \_   _| | _____    / __\ ___ | |_ 
+ /  \/ / | | | |/ / _ \  /__\/// _ \| __|
+/ /\  /| |_| |   <  __/ / \/  \ (_) | |_ 
+\_\ \/  \__,_|_|\_\___| \_____/\___/ \__| By Pąblo#4316
+'''))
         bot_token = Write.Input(f"\nBOT TOKEN -> ", Colors.blue_to_purple, interval=0.00005)
         guild_id = Write.Input(f"\nGUILD ID -> ", Colors.blue_to_purple, interval=0.00005)
         jsondata = {
@@ -36,29 +35,27 @@ def main():
         with open(filepath, 'w') as config_file:
             config_file.write(savejson)
     os.system('cls')
-    print(Colorate.Horizontal(Colors.purple_to_red, '''
-┌┐┌┬ ┬┬┌─┌─┐  ┌┐ ┌─┐┌┬┐
-││││ │├┴┐├┤   ├┴┐│ │ │ 
-┘└┘└─┘┴ ┴└─┘  └─┘└─┘ ┴ By Pąblo#4316
-
-Pąblo#4316 | github.com/palblo/DiscordNukeBot
-    '''))
+    print(Colorate.Horizontal(Colors.purple_to_red, '''     __       _            ___       _   
+  /\ \ \_   _| | _____    / __\ ___ | |_ 
+ /  \/ / | | | |/ / _ \  /__\/// _ \| __|
+/ /\  /| |_| |   <  __/ / \/  \ (_) | |_ 
+\_\ \/  \__,_|_|\_\___| \_____/\___/ \__| By Pąblo#4316
+'''))
 
     os.system("title DISCORD NUKER BOT  :  V1.1  :  HOME")
     user = os.getlogin( )
-    print(Colorate.Vertical(Colors.red_to_white, f'''
-┌───────────────────┐
-│        V1.1       │
-│───────────────────│
-│0 = RESET CONFIG   │
-│1 = SPAM           │
-│2 = DELETE CHANNELS│
-│3 = CREATE CHANNELS│
-│4 = FULL NUKE      │
-└───────────────────┘
+    print(Colorate.Vertical(Colors.red_to_white, f'''\n            ┌───────────────────┐
+            │        V1.1       │
+            │───────────────────│
+            │0 = RESET CONFIG   │
+            │1 = SPAM           │
+            │2 = DELETE CHANNELS│
+            │3 = CREATE CHANNELS│
+            │4 = FULL NUKE      │
+            └───────────────────┘
     '''))
 
-    action = Write.Input(f"action -> ", Colors.blue_to_purple, interval=0.00005)
+    action = Write.Input(f"ACTION -> ", Colors.purple_to_red, interval=0.00005)
     header = {
         'authorization': f'Bot {bot_token}',
     }
@@ -73,8 +70,8 @@ Pąblo#4316 | github.com/palblo/DiscordNukeBot
 
     if action == '0':
         os.system("title DISCORD NUKER BOT  :  V1.1  :  RESET CONFIG")
-        bot_token = Write.Input(f"\nBOT TOKEN -> ", Colors.blue_to_purple, interval=0.00005)
-        guild_id = Write.Input(f"\nGUILD ID -> ", Colors.blue_to_purple, interval=0.00005)
+        bot_token = Write.Input(f"\nBOT TOKEN -> ", Colors.purple_to_red, interval=0.00005)
+        guild_id = Write.Input(f"\nGUILD ID -> ", Colors.purple_to_red, interval=0.00005)
         jsondata = {
             "bot_token" : bot_token,
             "guild_id" : guild_id
@@ -89,7 +86,7 @@ Pąblo#4316 | github.com/palblo/DiscordNukeBot
         channel_ids = requests.get(f"https://discord.com/api/v9/guilds/{guild_id}/channels", headers=header)
         channels_id = [channel['id'] for channel in json.loads(channel_ids.text)]
         print(Colorate.Horizontal(Colors.purple_to_red, '\nyou have selected SPAM', 1))
-        message = Write.Input(f"\nMESSAGE -> ", Colors.blue_to_purple, interval=0.00005)
+        message = Write.Input(f"\nMESSAGE -> ", Colors.purple_to_red, interval=0.00005)
         payload = {
             "content": message
         }
